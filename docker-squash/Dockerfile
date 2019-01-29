@@ -2,9 +2,6 @@ FROM centos:7
 
 WORKDIR /var/www
 
-#Adding nginx repo
-COPY ./files/nginx.repo /etc/yum.repos.d/
-
 #Installing Epel Release REPO
 RUN yum -y install epel-release 
 
